@@ -1,9 +1,11 @@
+require './nameable'
+
 # Create class person
-class Person
+class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
-  def initialize(name, age = 'Unknown', parent_permission: true)
+  def initialize(age = 'Unknown', name,  parent_permission: true)
     @id = Random.rand(1..1000)
     @name = name
     @age = age
@@ -20,6 +22,6 @@ class Person
   end
 
   def correct_name
-    name
+    @name
   end
 end

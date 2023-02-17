@@ -107,7 +107,7 @@ class App
     puts 'Teacher created successfully'
   end
 
-  #Create a book method
+  # Create a book method
   def create_book
     print 'Title: '
     book_title = gets.chomp

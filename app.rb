@@ -20,7 +20,7 @@ class App
       puts 'No books found.'
     else
       @books.each_with_index do |book, index|
-        puts "#{index}) Title: #{book.title}, Author: #{book.author}"
+        puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}"
       end
     end
     nil
@@ -28,7 +28,7 @@ class App
 
   # list of people method
   def list_people
-    print 'list of a students (1) or a teachers (2)? [Input the number]: '
+    print 'Do you want to Create a list of a students (1) or a teachers (2)? [Input the number]: '
     list_person = gets.chomp.to_i
     case list_person
     when 1
@@ -45,8 +45,8 @@ class App
       puts 'No students found.'
     else
       @students.each_with_index do |student, index|
-        puts "#{index}) [#{student.class}] ID:- #{student.id}, Name:- #{student.name},
-        Age:- #{student.age}, classroom:- #{student.classroom}"
+        puts "#{index}) [#{student.class}] ID: #{student.id}, Name: #{student.name},
+         Age: #{student.age}, classroom: #{student.classroom}"
       end
     end
     nil
@@ -57,8 +57,8 @@ class App
       puts 'No teachers found.'
     else
       @teachers.each_with_index do |teacher, index|
-        puts "#{index}) [#{teacher.class}] ID:- #{teacher.id}, Name:- #{teacher.name},
-        Age:- #{teacher.age}, specialization:- #{teacher.specialization}"
+        puts "#{index}) [#{teacher.class}] ID: #{teacher.id}, Name: #{teacher.name},
+         Age: #{teacher.age}, specialization: #{teacher.specialization}"
       end
     end
     nil
@@ -66,7 +66,7 @@ class App
 
   # Create a person method
   def create_person
-    print 'Add a student (1) or a teacher (2)? [Input the number]: '
+    print 'Do you want to Create a student (1) or a teacher (2)? [Input the number]: '
     select_person = gets.chomp.to_i
     case select_person
     when 1
@@ -162,7 +162,7 @@ class App
       person_id = gets.chomp.to_i
       @rentals.each do |rental|
         if rental.person.id == person_id
-          puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
+          puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
         end
       end
     end

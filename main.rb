@@ -1,7 +1,7 @@
 require './app'
 
 def display_options
-  'Please choose an option by entering a number between 1 to 7:
+  'Please choose an option by entering a number:
   1 - List of all books
   2 - List of all people
   3 - Add a person
@@ -42,9 +42,7 @@ def main
   puts "Welcome to School library App!\n\n"
 
   loop do
-    puts '=' * 60
     puts display_options
-    puts '=' * 60
     print 'Your option: '
     option = user_option
     puts option == 'Invalid' ? 'Invalid option, please type correct number!' : available_options(option, library)

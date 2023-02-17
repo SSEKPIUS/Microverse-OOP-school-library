@@ -7,6 +7,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -32,6 +33,12 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 - Ruby.
+
+<!-- KEY FEATURES -->
+### Key Features- <a name="key-features"></a>
+- Add new students or teachers
+- Add new books.
+- Save records of who borrowed a given book and when
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
